@@ -16,26 +16,40 @@ html {
 	height: 100vh;
 	position: fixed;
 	top: 0;
-	left: 0;
+	left: -250px;
 	/*top layer*/
 	z-index: 9999;
+	background: lightgreen;
+	transition: all 0.3s;
+	overflow-y: scroll;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#sidebar.active {
+	left:0;
 }
 
 /*sidebar overlay background*/
 .overlay {
-	/*display: none*/
+	display: none;
 	position: fixed;
+	
 	/*full screen*/
 	width: 100vw;
 	height: 100vh;
+	
 	/*background as transparent black*/
 	background: rgba(0, 0, 0, 0.7);
+	
 	/*middle layer: appears below the sidebar */
 	z-index: 998;
-	/*opacity: 0*/	
+	opacity: 0;	
+	
 	/*transition animation*/
 	transition: all 0.5s ease-in-out;
 }
+
+
 
 /*display overlay background when it's active*/
 .overlay.active {
