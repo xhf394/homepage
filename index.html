@@ -25,7 +25,19 @@
 		<div id="dismiss">
 			<i class="fas fa-arrow-left"></i>
 		</div>
-		<div>Header</div>		
+		<div class="collapse navbar-collapse" id="navbarContent">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="">Portfolio</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="">About Me</a>
+				</li>
+			</ul>
+		</div>
 	</nav>
 
 	<!-- Page Content -->
@@ -129,7 +141,7 @@
     <!-- jQuery Custom Scroller CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
-    <script type="text/JavaScript">
+    <script type="text/javascript">
         $(document).ready(function() {
         	$('#sidebar').mCustomScrollbar({
         		theme: "minimal"
@@ -144,7 +156,7 @@
     	});
 
     	//open sidebar
-    	$(#sidebarCollapse).on('click', function() {
+    	$('#sidebarCollapse').on('click', function() {
     		//open sidebar
     		$('#sidebar').addClass('active');
     		//fade in the overlay
@@ -153,6 +165,7 @@
     		$('a[aria-expanded=true').attr('aria-expanded', 'false');
     	    });
     	});
+
     </script>
 </body>
 </html>
